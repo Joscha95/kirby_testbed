@@ -7,10 +7,8 @@ Kirby::plugin('bu/change-file-template', [
             $file = $file->save([
               'template' => 'image',
               'text' => 'test',
-              'isVideo' => $file->type()=='video' ? 'true' : 'false' 
             ], $lang->code());
           };
-          
       }
   ]
 ]);
